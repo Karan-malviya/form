@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+   
+   
+<style>
+    .hello{
+    background:cadetblue;
+    }
+</style></head>
+
+<body>
+<form class="hello">
+    <h1>register form</h1><table>
+
+        
+        <tbody><tr>
+            <td>
+                Name:
+            </td>
+            <td>
+                <input type="text">
+            </td>
+
+        </tr>
+
+        <tr>
+            <td>father name :</td>
+            <td>
+                <input type="text">
+            </td>
+        </tr>
+        <tr>
+            <td>persnol addres :</td>
+            <td>
+                <input type="text">
+            </td>
+
+
+        </tr>
+
+        <tr>
+           
+    <td>
+        gender:
+    </td>
+
+    <td>
+        <input type="radio" value="male"> male
+        <input type="radio" value="female">female
+    </td>
+            
+        </tr>
+
+        <tr>
+            <td>
+                Email:
+            </td>
+            <td>
+                <input type="email" placeholder="email">
+            </td>
+        </tr>
+
+        
+    </tbody></table>
+    
+    
+        
+            city:
+        
+    
+    <select form="city" id="city">
+             
+        <option selected="selected">bhopal</option>
+        <option>vidisha</option>
+    </select>
+<br>
+<br>
+    
+        
+            course:
+        
+        <select for="course" id="course">
+            
+            <option selected="selected">html</option>
+            <option>css</option>
+            <option>java</option>
+            <option>react</option>
+            <option>mongodv</option>
+        </select>
+    
+    <br>
+    <br>
+    
+        
+            district:
+        
+
+    
+    <select for="district">
+<option selected="selected">raisen</option>
+<option>bhopal</option>
+<option>vidisha</option>
+    </select>
+    <br>
+    <br>
+
+    
+        
+
+            pincode:
+        
+        
+        
+
+            <input type="text" placeholder="">
+        
+        
+    
+    <br>
+    <br>
+    
+        email id:
+        
+            <input type="text">
+        
+    
+    <br>
+    <br>
+    
+       
+    
+        Dob":
+    
+    
+
+        <input type="text">
+    
+    
+    
+    <br>
+    <br>
+
+    
+        
+            mobile no:
+        
+        
+            <input type="text">
+        
+    
+
+    <br>
+    <br>
+
+    
+    <button type="button">rest</button>
+    <button type="submity"> submit</button>
+
+</form>
+    
+    
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
